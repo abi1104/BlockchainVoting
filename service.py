@@ -136,6 +136,10 @@ class Blockchain:
 
 
 app = Flask(__name__)
+@app.route('/')
+def home():
+    return "Welcome to the E-Voting System using Blockchain!"
+
 
 # the node's copy of blockchain
 blockchain = Blockchain()
